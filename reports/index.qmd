@@ -1,11 +1,8 @@
 ---
 title: "DSCI 310: Historical Horse Population in Canada"
 author: "Tiffany Timbers & Jordan Bourak"
-format: html
 editor: source
 echo: false
-toc: true
-toc-depth: 1
 bibliography: references.bib
 embed-resources: true
 ---
@@ -53,7 +50,7 @@ We present the standard deviations in @tbl-std-dev-horse.
 #| label: tbl-std-dev-horse
 #| tbl-cap: Standard deviation of historical (1906-1972) horse populations for each Canadian province.
 
-horses_sd_table <- read_csv("../results/horses_sd.csv")
+horses_sd_table <- read_csv("../results/horses_sd.csv", show_col_types = FALSE)
 largest_sd <- horses_sd_table$Province[1]
 knitr::kable(horses_sd_table)
 ```
