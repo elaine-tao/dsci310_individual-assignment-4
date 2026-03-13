@@ -2,5 +2,6 @@ project:
   output-dir: ../docs
 
 format:
-  html: default
+  html:
+    embed-resources: true
   pdf: default
